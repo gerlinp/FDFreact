@@ -50,7 +50,7 @@ const Icon = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #8B4870;
+    background: #fff;
     color: #8B4870; 
     display: flex;
     align-items: center;
@@ -61,7 +61,8 @@ const Icon = styled.div`
 
     &:hover{
         background: #E879BB;
-        transform: scale(1.1)
+        transform: scale(1.1);
+        color: white;
     }
     
 `
