@@ -16,17 +16,39 @@
 }
 
 .landing::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    z-index: -1;
-  }
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
 
-  .landingImg {
-    max-height: 10rem;
-    max-width: 1700px
-  }
+.landingImg {
+  max-height: 10rem;
+  max-width: 1700px
+}
+
+.navbar {
+  background: black;
+}
+.navbar img {
+  height: 50px;  
+}
+
+.navbar-toggler-icon {
+  background-image: url("../list.svg") !important;
+
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #E879BB;
+}

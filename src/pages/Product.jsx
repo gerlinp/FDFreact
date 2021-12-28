@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Navbar from '../components/Navbar'
+import MainNavBar from '../components/MainNavBar'
 import Announcement from '../components/Announcement'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
@@ -109,7 +109,7 @@ const Button = styled.button`
 const Product = () => {
     return (
         <Container>
-            <Navbar/>
+            <MainNavBar/>
             <Announcement/>
             <Wrapper>
               <ImgContainer>

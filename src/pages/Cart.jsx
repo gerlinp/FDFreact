@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import MainNavBar from '../components/MainNavBar'
 import { Remove, Add } from "@material-ui/icons";
 
 const Container = styled.div`
@@ -150,7 +150,7 @@ const Button = styled.button`
 const Cart = () => {
     return (
         <Container>
-            <Navbar/>
+            <MainNavBar/>
             <Announcement/>
             <Wrapper>
                 <Title>YOUR BAG</Title>
