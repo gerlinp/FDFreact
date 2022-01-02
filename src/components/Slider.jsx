@@ -3,6 +3,7 @@ import styled from "styled-components"
 import './myStyles.css'
 import {sliderItems} from "../data"
 import React, { useState } from "react";
+import {mobile} from "../responsive"
 
 const Container = styled.div`
     width: 100%;
@@ -10,6 +11,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({ display: "none"})}
 `
 
 const Arrow = styled.div`
@@ -53,7 +55,7 @@ const ImgContainer = styled.div`
 `
 
 const Image = styled.img`
-height: 80%;
+${'' /* height: 80%; */}
 `
 
 const InfoContainer = styled.div`

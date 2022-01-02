@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 .landing {
     background-image: url(https://content.invisioncic.com/Mseclife/monthly_2018_05/558524_wookmark.jpg.c1703efd563569fc8643c6a86d260906.jpg);
     background-repeat: no-repeat;
@@ -28,27 +31,45 @@
 
 .landingImg {
   max-height: 10rem;
-  max-width: 1700px
+  max-width: 1700px;
+}
+
+.navbar img {
+  height: 2rem;  
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif !important;
+  padding: 8px 20px 8px 20px !important;
+  color: white !important;
 }
 
 .navbar {
-  background: black;
+  background: black !important;
+  padding: 5px 20px;
 }
-.navbar img {
-  height: 50px;  
+
+a.nav-link:hover {
+  color:#E879BB !important;
 }
 
 .navbar-toggler-icon {
   background-image: url("../list.svg") !important;
-
 }
 
 .navbar-toggler {
   border: none;
 }
 
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #E879BB;
 }
+
+.navbar input, .navbar  {
+  max-width:150
+}
+
+

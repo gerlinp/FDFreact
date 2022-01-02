@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+import {mobile} from "../responsive"
 
 const Container = styled.div`
+    min-width: 320px;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(
@@ -15,9 +17,10 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
     padding: 20px;
-    width: 40%;
+    width: 50%;
     background: #121212;
     color: white;
+    ${mobile({ width: "75%", flexDirection: "column"})};
 `
 const Form = styled.form`
     display: flex;
@@ -30,12 +33,11 @@ const Title = styled.h1`
 `
 const Input = styled.input`
     flex:1;
-    min-width: 40%;
+    min-width: 170px;
     margin: 20px 10px 0px  0px; 
     padding: 10px;  
     ${'' /* background: #121212; */}
     color: #e879bb;
-
 `
 const Agreement = styled.span`
     font-size: 12px;
@@ -48,6 +50,7 @@ const Button = styled.button`
     color: white;
     background: #e879bb;
     cursor: pointer;
+    ${mobile({ width: "75%", flexDirection: "column"})};
 `
 
 const Register = () => {

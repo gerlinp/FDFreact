@@ -3,14 +3,17 @@ import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
 import MainNavBar from '../components/MainNavBar'
 import { Remove, Add } from "@material-ui/icons";
+import {mobile} from "../responsive"
 
 const Container = styled.div`
-
+    min-width: 375px;
 
 `
 const Wrapper = styled.div`
     padding: 20px;
     background: #fff;
+    ${mobile({ padding: "10px"})};
+
 `
 
 const Title = styled.h1`
@@ -30,13 +33,14 @@ const TopButton = styled.button`
     padding: 10px;
     font-weight: 600;
     cursor: pointer;
-    border: ${props=>props.type === "filled" && "none"};
-    background: ${props=>props.type === "filled" ? "#e879bb" : "white"};
+    border: ${props=>props.type === "none"};
+    background-color: ${props=>props.type === "filled" ? "#e879bb" : "white"};
     color: ${props=>props.type === "filled" && "#fff"};
+    ${mobile({ fontSize: "13px"})};
 `
 
 const TopTexts = styled.div`
-    
+     ${mobile({ display: "none"})};
 `
 
 const TopText = styled.span`
@@ -48,7 +52,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
     display: flex;
     justify-content: space-between;
-
+    ${mobile({ flexDirection: "column"})};
 `
 
 const Info = styled.div`
@@ -58,6 +62,7 @@ const Info = styled.div`
 const Product = styled.div`
     display: flex;
     justify-content: space-between;
+    ${mobile({ flexDirection: "column",flexWrap: "wrap" })};
 `
 const ProductDetail = styled.div`
     flex: 2;
@@ -84,7 +89,9 @@ const ProductColor = styled.div`
     border: solid 5px ${props=>props.border};
 `
 
-const ProductSize = styled.span``
+const ProductSize = styled.span`
+
+`
 
 const PriceDetail = styled.span`
     flex: 1;
@@ -102,10 +109,12 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
     font-size: 24px;
     margin: 5px;
+    ${mobile({ margin: "5px 15px"})};
 `
 const ProductPrice = styled.div`
     font-size: 30px;
     font-weight: 200;
+    ${mobile({ marginBottom: "20px"})};
 `
 const Hr = styled.hr`
     background: #eee
@@ -142,11 +151,8 @@ const Button = styled.button`
   color: white;
   font-weight: 600;
   border: none;
+
 `
-
-
-
-
 const Cart = () => {
     return (
         <Container>
